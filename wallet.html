@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Assets UI Clone</title>
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <span class="nav-item active">Tổng quan về tài khoản</span>
+            <span class="nav-item">Giao ngay</span>
+            <span class="nav-item">Funding</span>
+            <span class="nav-item">Futures</span>
+        </nav>
+
+        <!-- Balance Section -->
+        <section class="balance-section">
+            <div class="balance-header">
+              <div class="label-group">
+    <span class="label-text">Tổng giá trị dự kiến</span>
+
+    <img src="img/images/eyetop.png"
+         class="eye-icon">
+</div>
+               <div class="header-icons">
+    <img src="img/images/img_right.png" class="chart-icon">
+
+    <img src="img/images/img_right1.png" class="history-icon" id="history-btn">
+        </div>
+            </div>
+            
+           <div class="amount-row">
+
+    <h1 class="main-amount">
+        6.659.215,9 <span class="symbol">đ</span>
+    </h1>
+
+    <div class="currency-dropdown">
+        VND
+    </div>
+
+    <!-- tách riêng -->
+    <img src="img/images/arrow-down.png"
+         class="currency-arrow">
+</div>
+
+    <div class="pnl-row">
+
+    <!-- chữ bên trái -->
+    <div class="pnl-content">
+        <span class="pnl-label">
+            PNL của hôm nay
+        </span>
+
+        <span class="pnl-value negative">
+            -46.581,27 đ(-0,70%)
+        </span>
+    </div>
+
+    <!-- img riêng -->
+    <div class="pnl-arrow-box">
+        <img src="img/images/arrow_right.png"
+             class="pnl-arrow">
+    </div>
+
+</div>
+        </section>
+
+        <!-- Main Buttons -->
+        <div class="button-group">
+            <button class="btn btn-primary">Nạp tiền</button>
+            <button class="btn btn-secondary">Gửi</button>
+            <button class="btn btn-secondary">Chuyển</button>
+        </div>
+
+        <!-- Section Tabs -->
+        <div class="section-tabs">
+          <div class="tabs-header">
+
+    <span class="tab-item-text">
+        Tiền mã hóa
+    </span>
+
+    <div class="tab-item-text active">
+        Tài khoản
+        <div class="active-indicator"></div>
+    </div>
+
+</div>
+
+<!-- tách riêng icon -->
+<img src="img/images/setting.png"
+     class="setting-icon">
+
+            <!-- Asset List -->
+            <div class="asset-list">
+                <div class="asset-item">
+                    <span class="asset-name">Giao ngay</span>
+                    <span class="asset-value">4.545.710,56 đ</span>
+                </div>
+                <div class="asset-item">
+                    <span class="asset-name">Funding</span>
+                    <span class="asset-value">2.107.880,75 đ</span>
+                </div>
+                <div class="asset-item">
+                    <span class="asset-name">Futures</span>
+                    <span class="asset-value">0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Assistant Icon -->
+        <div class="floating-ai">
+            <img src="img/images/AI.png" alt="AI">
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+       <footer class="footer-nav">
+
+  <a href="index-extra.html" class="footer-item">
+
+    <div class="footer-home-icon">
+        <img src="img/images/main_bncc.png">
+    </div>
+
+    <span class="footer-home-text">
+        Trang chủ
+    </span>
+
+</a>
+
+    <div class="footer-item">
+        <div class="footer-icon">
+            <img src="img/images/market.png">
+        </div>
+        <span class="footer-text">Thị trường</span>
+    </div>
+
+    <div class="footer-item">
+        <div class="footer-icon">
+            <img src="img/images/trade.png">
+        </div>
+        <span class="footer-text">Giao dịch</span>
+    </div>
+
+    <div class="footer-item">
+        <div class="footer-icon">
+            <img src="img/images/futures.png">
+        </div>
+        <span class="footer-text">HĐTL</span>
+    </div>
+
+    <div class="footer-item active">
+        <div class="footer-icon">
+            <img src="img/images/wallet.png">
+        </div>
+        <span class="footer-text">Tài sản</span>
+    </div>
+
+</footer>
+    </div>
+    <!-- Icon Lịch sử (Thay thế vào vị trí cũ trong header) -->
+<!-- <img src="img/images/img_right1.png" class="icon-medium" id="history-btn" style="cursor: pointer;"> -->
+
+<!-- Cấu trúc Bottom Sheet -->
+<div class="bottom-sheet" id="bottom-sheet">
+    <div class="sheet-overlay" id="sheet-overlay"></div>
+    <div class="sheet-content">
+        <div class="sheet-handle"></div>
+        <h3 class="sheet-title">Chọn Lịch sử</h3>
+        
+ 
+        <a href="assets-history.html" class="sheet-menu-item" style="text-decoration: none; color: inherit;">
+    <div class="item-info">
+        <span class="item-title">Tài sản</span>
+        <p class="item-desc">Tổng thể, P2P, Pay, Chuyển</p>
+    </div>
+    <img src="img/images/arrow_right.png" class="icon-assets">
+        </a>
+
+    
+
+        <div class="sheet-menu-item">
+            <div class="item-info">
+                <span class="item-title">Giao dịch của tôi</span>
+                <p class="item-desc">Giao ngay, Cross Margin, Isolate Margin, USD$-M Futures, Hợp đồng
+                    Tương lai COIN-M...
+                </p>
+            </div>
+            <img src="img/images/arrow_right.png" class="icon-trade">
+        </div>
+    </div>
+</div>
+<script src="wallet.js"></script>
+</body>
+</html>

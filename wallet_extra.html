@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tài sản</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="wallet_extra.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="title">Tổng quan về tài khoản</div>
+
+        <div class="tabs">
+            <span class="active">Giao ngay</span>
+            <span>Funding</span>
+            <span>Futures</span>
+        </div>
+    </div>
+
+    <!-- BALANCE -->
+    <div class="balance">
+        <div class="label">
+            Tổng giá trị dự kiến
+        </div>
+
+        <div class="value">
+            6.752.675,36 ₫ <span class="currency">VND</span>
+        </div>
+
+        <div class="pnl">
+            PNL của hôm nay 
+            <span class="green">+45.050,82 ₫ (+0,67%)</span>
+        </div>
+    </div>
+
+    <!-- ACTION BUTTON -->
+    <div class="actions">
+        <button class="btn yellow">Nạp tiền</button>
+        <button class="btn">Gửi</button>
+        <button class="btn">Chuyển</button>
+    </div>
+
+    <!-- SWITCH -->
+    <div class="switch">
+        <span>Tiền mã hóa</span>
+        <span class="active">Tài khoản</span>
+    </div>
+
+    <!-- LIST -->
+    <div class="list">
+
+        <div class="row">
+            <span>Giao ngay</span>
+            <span>4.622.956,45 ₫</span>
+        </div>
+
+        <div class="row">
+            <span>Funding</span>
+            <span>2.113.325,65 ₫</span>
+        </div>
+
+        <div class="row">
+            <span>Futures</span>
+            <span>0.00</span>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <div class="bottom-nav">
+
+        <a href="#" class="nav-item">
+            <img src="img/home.png">
+            <span>Trang chủ</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <img src="img/market.png">
+            <span>Thị trường</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <img src="img/trade.png">
+            <span>Giao dịch</span>
+        </a>
+
+        <a href="#" class="nav-item">
+            <img src="img/futures.png">
+            <span>HĐTL</span>
+        </a>
+
+        <a href="#" class="nav-item active">
+            <img src="img/wallet.png">
+            <span>Tài sản</span>
+        </a>
+
+    </div>
+
+</div>
+<div class="history-sheet" id="historySheet">
+
+    <!-- overlay mờ -->
+    <div class="overlay"></div>
+
+    <!-- content -->
+    <div class="sheet-content">
+
+        <div class="drag-bar"></div>
+
+        <h3>Chọn Lịch sử</h3>
+
+        <div class="sheet-item">
+            <div>
+                <div class="title">Tài sản</div>
+                <div class="desc">Tổng thể, P2P, Pay, Chuyển</div>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="sheet-item">
+            <div>
+                <div class="title">Giao dịch của tôi</div>
+                <div class="desc">
+                    Giao ngay, Cross Margin, Futures...
+                </div>
+            </div>
+            <span>›</span>
+        </div>
+
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>

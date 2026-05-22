@@ -206,7 +206,13 @@ body {
   font-size: 13px;
   font-weight: 400;
 }
-
+.txid-text {
+  text-decoration-line: underline;
+  text-decoration-color: #1e2329;
+  text-decoration-thickness: 1.2px;
+  text-underline-offset: 3px;
+  line-height: 1.55;
+}
 .report-icon {
   font-size: 14px;
 }

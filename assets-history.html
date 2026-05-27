@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài sản - Lịch sử giao dịch</title>
+    <link rel="stylesheet" href="assets-history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+<!--         
+              <i class="fa-solid fa-arrow-left icon-back"
+   onclick="window.location.href='wallet.html'"></i> -->
+  <img
+  src="img/images/arrow_left.png" class="icon-back" onclick="window.location.href='wallet.html'" alt="back" />
+            <div class="header-center">
+                <div class="title-with-arrow">
+                    <span class="main-title">Tài sản</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="sub-title">Tổng thể</div>
+            </div>
+          <img
+    src="img/images/muiten.png" class="icon-history" alt="history"/>
+        </div>
+
+        <!-- List Giao dịch -->
+        <div class="transaction-list">
+            
+            <!-- Item 1 (P2P - Bán) - Click vào đây để sang trang chi tiết -->
+            <div class="transaction-item" data-href="p2p-detail.html">
+                <div class="item-left">
+                    <div class="item-name">P2P</div>
+                    <div class="item-desc">Bán</div>
+                    <div class="item-time">2026-04-26 01:21:31</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount sell">-186,79 USDT</div>
+                    <div class="fiat-amount">+5,000,000 VND</div>
+                    <div class="status-done">Đã hoàn tất</div>
+                </div>
+            </div>
+      <!-- Item 4 (Chuyển) -->
+            <div class="transaction-item">
+                <div class="item-left">
+                    <div class="item-name">Chuyển</div>
+                    <div class="item-time">2026-03-26 11:44:05</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount transfer">49.31 USDT</div>
+                    <div class="transfer-path">Giao ngay > Nạp tiền</div>
+                </div>
+            </div>
+            <!-- Item 2 (Pay - Nhận) -->
+            <!-- <div class="transaction-item">
+                <div class="item-left">
+                    <div class="item-name">Pay</div>
+                    <div class="item-desc">Nhận tiền mã hóa</div>
+                    <div class="item-time">2026-04-22 17:41:57</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount receive">+94.98 USDT</div>
+                    <div class="user-id">User-3fe9e</div>
+                </div>
+            </div> -->
+
+                <!-- Item 3 (Nap) -->
+             <div class="transaction-item">
+                <div class="item-left">
+                    <div class="item-name">Nạp</div>
+                    <!-- <div class="item-desc">Nhận tiền mã hóa</div> -->
+                    <div class="item-time">2026-04-22 17:41:57</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount receive">+94.98 USDT</div>
+                    <div class="user-id">Đã hoàn tất</div>
+                </div>
+            </div>
+            <div class="transaction-item" data-href="p2p-detail.html">
+                <div class="item-left">
+                    <div class="item-name">P2P</div>
+                    <div class="item-desc">Bán</div>
+                    <div class="item-time">2026-04-26 01:21:31</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount sell">-186,79 USDT</div>
+                    <div class="fiat-amount">+5,000,000 VND</div>
+                    <div class="status-done">Đã hoàn tất</div>
+                </div>
+            </div>
+             <div class="transaction-item">
+                <div class="item-left">
+                    <div class="item-name">Chuyển</div>
+                    <div class="item-time">2026-03-26 11:44:05</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount transfer">49.31 USDT</div>
+                    <div class="transfer-path">Giao ngay > Nạp tiền</div>
+                </div>
+            </div>
+               <div class="transaction-item" data-href="recharge.html">
+                <div class="item-left">
+                    <div class="item-name">Nạp</div>
+                    <!-- <div class="item-desc">Nhận tiền mã hóa</div> -->
+                    <div class="item-time">2026-04-22 17:41:57</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount receive">+94.98 USDT</div>
+                    <div class="user-id">Đã hoàn tất</div>
+                </div>
+            </div>
+                  <!-- Item 3 (Rut) -->
+              <div class="transaction-item" data-href="withdraw-money.html">
+                <div class="item-left">
+                    <div class="item-name">Rút</div>
+                    <!-- <div class="item-desc">Bán</div> -->
+                    <div class="item-time">2026-04-26 01:21:31</div>
+                </div>
+                <div class="item-right" >
+                    <div class="amount sell">-186,79 USDT</div>
+                    <!-- <div class="fiat-amount">+5,000,000 VND</div> -->
+                    <div class="status-done">Đã hoàn tất</div>
+                </div>
+            </div>
+            <!-- Item 3 (Pay) -->
+            <!-- Item 4 (Chuyển) -->
+             <div class="transaction-item">
+                <div class="item-left">
+                    <div class="item-name">Nạp</div>
+                    <!-- <div class="item-desc">Nhận tiền mã hóa</div> -->
+                    <div class="item-time">2026-04-22 17:41:57</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount receive">+94.98 USDT</div>
+                    <div class="user-id">Đã hoàn tất</div>
+                </div>
+            </div>
+               <div class="transaction-item" data-href="p2p-detail.html">
+                <div class="item-left">
+                    <div class="item-name">P2P</div>
+                    <div class="item-desc">Bán</div>
+                    <div class="item-time">2026-04-26 01:21:31</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount sell">-186,79 USDT</div>
+                    <div class="fiat-amount">+5,000,000 VND</div>
+                    <div class="status-done">Đã hoàn tất</div>
+                </div>
+                
+            </div>
+ <div class="transaction-item">
+                <div class="item-left">
+                    <div class="item-name">Nạp</div>
+                    <!-- <div class="item-desc">Nhận tiền mã hóa</div> -->
+                    <div class="item-time">2026-04-22 17:41:57</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount receive">+94.98 USDT</div>
+                    <div class="user-id">Đã hoàn tất</div>
+                </div>
+            </div>
+               <div class="transaction-item" data-href="p2p-detail.html">
+                <div class="item-left">
+                    <div class="item-name">P2P</div>
+                    <div class="item-desc">Bán</div>
+                    <div class="item-time">2026-04-26 01:21:31</div>
+                </div>
+                <div class="item-right">
+                    <div class="amount sell">-186,79 USDT</div>
+                    <div class="fiat-amount">+5,000,000 VND</div>
+                    <div class="status-done">Đã hoàn tất</div>
+                </div>
+        </div>
+    </div>
+<script src="assets-history.js"></script>
+</body>
+</html>
